@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include qp_naming_series_filter *.css
+recursive-include qp_naming_series_filter *.csv
+recursive-include qp_naming_series_filter *.html
+recursive-include qp_naming_series_filter *.ico
+recursive-include qp_naming_series_filter *.js
+recursive-include qp_naming_series_filter *.json
+recursive-include qp_naming_series_filter *.md
+recursive-include qp_naming_series_filter *.png
+recursive-include qp_naming_series_filter *.py
+recursive-include qp_naming_series_filter *.svg
+recursive-include qp_naming_series_filter *.txt
+recursive-exclude qp_naming_series_filter *.pyc
