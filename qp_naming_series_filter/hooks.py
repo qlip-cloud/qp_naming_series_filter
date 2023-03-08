@@ -15,6 +15,7 @@ app_license = "MIT"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/qp_naming_series_filter/css/qp_naming_series_filter.css"
 # app_include_js = "/assets/qp_naming_series_filter/js/qp_naming_series_filter.js"
+app_include_js = "/assets/qp_naming_series_filter/js/naming_series_function.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/qp_naming_series_filter/css/qp_naming_series_filter.css"
@@ -31,7 +32,16 @@ app_license = "MIT"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {
+    "Customer" : "public/js/customer_form_script.js",
+    "Sales Order" : "public/js/fs_sales_order.js",
+    "Sales Invoice" : "public/js/fs_sales_invoice.js",
+    "Purchase Order" : "public/js/fs_purchase_order.js",
+    "Purchase Invoice" : "public/js/fs_purchase_invoice.js",
+    "Delivery Note" : "public/js/fs_delivery_note.js",
+    "Payment Entry" : "public/js/fs_payment_entry.js",
+    }
+
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
