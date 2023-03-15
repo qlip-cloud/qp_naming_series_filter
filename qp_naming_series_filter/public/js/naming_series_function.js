@@ -1,8 +1,5 @@
 
 function naming_series_filter(){
-
-    set_field_options("naming_series", [])
-
     var naming_series_array = []
 
     var naming_series_options = [];
