@@ -32,13 +32,18 @@ function naming_series_filter(){
                                 naming_series_options.splice(index, 1)
 
                             }
+
+                            if(option == ''){
+                                naming_series_array.push(option)
+                                naming_series_options.splice(index, 1)
+                            }
                         })
 
                     })
                 
                     naming_series_array.push.apply(naming_series_array,naming_series_options)
                 
-                    cur_frm.set_value('naming_series', naming_series_array)
+                    cur_frm.set_value('naming_series', naming_series_array[0])
                 
                     set_field_options("naming_series", naming_series_array)
                 }
