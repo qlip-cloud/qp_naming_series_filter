@@ -1,6 +1,6 @@
 frappe.ui.form.on('Purchase Invoice', {
 	refresh(frm) {
-		if (!frm.is_new()) {
+		if (frm.is_new()) {
 			naming_series_filter()
         }
 	}
