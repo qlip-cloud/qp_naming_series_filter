@@ -1,6 +1,6 @@
 frappe.ui.form.on('Purchase Order', {
 	refresh(frm) {
-		if (!frm.is_new()) {
+		if (frm.is_new()) {
 			naming_series_filter()
         }
 	}
