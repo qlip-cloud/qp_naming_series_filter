@@ -40,6 +40,14 @@ doctype_js = {
     "Purchase Invoice" : "public/js/fs_purchase_invoice.js",
     "Delivery Note" : "public/js/fs_delivery_note.js",
     "Payment Entry" : "public/js/fs_payment_entry.js",
+	"Journal Entry" : "public/js/fs_journal_entry.js",
+	"Material Request" : "public/js/fs_material_request.js",
+	"Project" : "public/js/fs_project.js",
+	"Purchase Receipt" : "public/js/fs_purchase_receipt.js",
+	"Quotation" : "public/js/sf_quotation.js",
+	"Request For Quotation" : "public/js/fs_rquest_for_quotation.js",
+	"Stock Entry" : "public/js/fs_stock_entry.js",
+	"Supplier Quotation" : "public/js/fs_supplier_quotation.js",
     }
 
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
