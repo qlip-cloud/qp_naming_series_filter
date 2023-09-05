@@ -41,8 +41,12 @@ function naming_series_filter(){
                     })
                 
                     naming_series_array.push.apply(naming_series_array,naming_series_options.filter((e) => e != null))
-                
-                    //cur_frm.set_value('naming_series', naming_series_array[0])
+                    
+                    if(naming_series_array.some((e) => e == cur_frm.doc.naming_series)){
+                        cur_frm.set_value('naming_series', cur_frm.doc.naming_series)
+                    }else{
+                        cur_frm.set_value('naming_series', naming_series_array[0])
+                    }
                 
                     set_field_options("naming_series", naming_series_array)
                 }
