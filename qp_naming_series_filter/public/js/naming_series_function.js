@@ -17,32 +17,32 @@ function naming_series_filter(){
 
                     companies.forEach(company => {
 
+                        naming_series_options = naming_series_options.filter((e) => e != null)
+                        
                         naming_series_options.forEach( (option, index, naming_series_options) => {
-
-                            var i = naming_series_options.findIndex(option);
-
-                            var opt_com_abbr = option.split("-");
+     
+                            var opt_com_abbr = option.split("-")
                         
                             if(opt_com_abbr[0].toUpperCase() == company.abbr.toUpperCase()){
                                 
                                 if(company.name == cur_frm.doc.company)
                                     naming_series_array.push(option)
-                                    
-                                naming_series_options.splice(i, 1)
+
+                                naming_series_options.splice(index, 1, null)
 
                             }
 
                             if(option == ''){
                                 naming_series_array.push(option)
-                                naming_series_options.splice(i, 1)
+                                naming_series_options.splice(index, 1, null)
                             }
                         })
 
                     })
                 
-                    naming_series_array.push.apply(naming_series_array,naming_series_options)
+                    naming_series_array.push.apply(naming_series_array,naming_series_options.filter((e) => e != null))
                 
-                    cur_frm.set_value('naming_series', naming_series_array[0])
+                    //cur_frm.set_value('naming_series', naming_series_array[0])
                 
                     set_field_options("naming_series", naming_series_array)
                 }
