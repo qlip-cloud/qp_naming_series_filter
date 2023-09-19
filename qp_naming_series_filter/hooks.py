@@ -15,6 +15,7 @@ app_license = "MIT"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/qp_naming_series_filter/css/qp_naming_series_filter.css"
 # app_include_js = "/assets/qp_naming_series_filter/js/qp_naming_series_filter.js"
+app_include_js = "/assets/qp_naming_series_filter/js/naming_series_function.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/qp_naming_series_filter/css/qp_naming_series_filter.css"
@@ -31,7 +32,24 @@ app_license = "MIT"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {
+    "Customer" : "public/js/customer_form_script.js",
+    "Sales Order" : "public/js/fs_sales_order.js",
+    "Sales Invoice" : "public/js/fs_sales_invoice.js",
+    "Purchase Order" : "public/js/fs_purchase_order.js",
+    "Purchase Invoice" : "public/js/fs_purchase_invoice.js",
+    "Delivery Note" : "public/js/fs_delivery_note.js",
+    "Payment Entry" : "public/js/fs_payment_entry.js",
+	"Journal Entry" : "public/js/fs_journal_entry.js",
+	"Material Request" : "public/js/fs_material_request.js",
+	"Project" : "public/js/fs_project.js",
+	"Purchase Receipt" : "public/js/fs_purchase_receipt.js",
+	"Quotation" : "public/js/fs_quotation.js",
+	"Request For Quotation" : "public/js/fs_rquest_for_quotation.js",
+	"Stock Entry" : "public/js/fs_stock_entry.js",
+	"Supplier Quotation" : "public/js/fs_supplier_quotation.js",
+    }
+
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
